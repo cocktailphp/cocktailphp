@@ -82,7 +82,6 @@ I specialize in building robust backends that do all the heavy lifting for your 
 
 <br/>  
 
-![Profile views counter](https://komarev.com/ghpvc/?username=phpdev115&&style=flat-square)  
   
 
 <br/>  
