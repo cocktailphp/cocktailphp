@@ -1,126 +1,95 @@
-# Basic API Bundle
-The bundle for rapid API development without writing boilerplate code
+## Hey �, I'm a Senior PHP Developer  
+  
 
-[![Build Status](https://travis-ci.com/CondeNastDigitalRU/BasicApiBundle.svg?branch=master)](https://travis-ci.com/CondeNastDigitalRU/BasicApiBundle)
 
-The main purpose of the bundle is to work with DTOs: serialization, deserialization and validation.
-It doesn't know anything about the database and ORM.
 
-Tasks solved by this bundle:
-* Deserializing the request body from JSON to an object or array of objects
-* Validating the deserialization result
-* Serializing the response to JSON
-* Serializing exceptions to JSON
-* Extracting typed values from a query string
-* Generating API documentation
+### Glad to see you here!  
+I’m a full-stack developer who has turned years of full-time into a freelancing career. Being a full-stack allows me to not only develop client-facing apps using JavaScript frameworks(Vue/React) and websites but also develop it with cutting edge backend using PHP frameworks.
 
-## Installation
-```shell script
-composer require condenast-ru/basic-api-bundle
-```
+I specialize in building robust backends that do all the heavy lifting for your app or website. I love designing systems that are light yet powerful, distributed yet synchronized and beautiful yet effective.  
+  
 
-Then bundle should be enabled in `bundles.php` file
+<br/>  
 
-```php
-<?php declare(strict_types=1);
-# config/bundles.php
 
-return [
-    # ...
-    Condenast\BasicApiBundle\CondenastBasicApiBundle::class => ['all' => true],
-];
-```
+## Rapidfire  
+<table><tr><td valign="top" width="50%">
 
-## How it works?
-The bundle is based on symfony kernel event subscribers, they do the bulk of the work.
-API actions are configured using annotations in the controller.
-Values from annotations are written to request attributes, which are then used by subscribers.
-`symfony/serializer` is used for serialization and deserialization,
-`symfony/validator` is used for validation,
-`nelmio/api-doc-bundle` is used for API documentation generation.
+- � I’m currently working on Upwork  
+  
 
-## Usage
-### API
-* Describe how to serialize and deserialize your objects according to the `symfony/serializer` documentation
-* Describe the validation rules for your objects according to the `symfony/validator` documentation
-* Configure your controller actions using the annotations provided with this bundle  
+- � I’m currently specializing Vue/React/Laravel  
+  
 
-Example:
+- ❓ Ask me about anything related to JS/PHP stack and related technologies  
+  
 
-```php
-<?php declare(strict_types=1);
+- ⚡ Fun fact: I keep night shift swithed on at all times   
 
-use Condenast\BasicApiBundle\Annotation as Api;
-use Condenast\BasicApiBundle\Request\QueryParamBag;
-use Condenast\BasicApiBundle\Response\Payload;
-use Condenast\BasicApiBundle\Tests\Fixtures\App\DTO\Article;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Validator\Constraints as Assert;
 
-class ArticleController
-{
-    /**
-     * Create article
-     *
-     * @Route(
-     *     "/articles",
-     *     name="app.articles.post",
-     *     methods={"POST"}
-     * )
-     * @Api\Resource("Article") # Resource name used to group actions in API documentation
-     * @Api\Deserialization(
-     *     argument="article", # The argument of the controller method, the result of deserialization will be passed there
-     *     type=Article::class, # The type of deserialization, such as Article or Article [] for an array of articles
-     *     context={"groups": "article.write"} # Deserialization context,
-     *     requestAttributes={"id": "id"} # Request attributes to assign their values to the properties of the deserialized object
-     *                                    # It can be useful when, for example, in an edit action you deserialize the DTO, and the identifier of the entity is in the url
-     * )
-     * @Api\Validation(
-     *     groups={"article.write"} # Validation groups
-     * )
-     * @Api\QueryParam(
-     *     name="tags", # The name by which the parameter will be available in the QueryParamBag
-     *     path="extra.tags", # The path to the parameter in the request, if not specified, will be equal to the name.
-     *     map=true, # Whether the parameter is an array
-     *     constraints={ # Validation constraints
-               @Assert\Length(min=2),
-     *     },
-     *     default={}, # Default parameter value
-     *                 # If not specified, then null or an empty array, depending on whether the parameter is declared as an array
-     *                 # If the parameter value does not meet the requirements, the default value will be returned
-     *     description="Tags to associate with", # Description, for an API documentation only
-     *     format="uuid" # Format, for an API documentation only
-     * )
-     * @OA\Response( # Response description, for an API documentation only
-     *     response=201,
-     *     description="Created article",
-     *     @OA\JsonContent(
-     *         type="object",
-     *         ref=@Nelmio\Model(type=Article::class, groups={"article.read"})
-     *     )
-     * )
-     */
-    public function postArticle(Article $article, QueryParamBag $query): Payload
-    {
-        $tags = $query->get('tags');
-    
-        return new Payload($article, 201, ['groups' => 'article.read']);
-    }
-}
-```
-### CORS
-The bundle does not contain anything for CORS, if necessary, use `nelmio/cors-bundle`.
+</td><td valign="top" width="50%">
 
-### API documentation
-Install `nelmio/api-doc-bundle` and `symfony/twig-bundle` and configure according to the documentation,
-bundle describers will add anything they can learn about actions to the documentation.
-Anything that is missing can be added via annotations to the controller, as written in the documentation
-for the `nelmio/api-doc-bundle`.
+<div align="center">
+<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
+</div>  
 
-## Development
-To run a web server with a test application for development and debugging, make sure the Symfony CLI is installed
-and run the command `make server`.
-The test application code is located in the `tests/Fixtures/App` directory.
 
-## Tests
-To run the tests, use the `make tests` command.
+</td></tr></table>  
+
+<br/>  
+
+
+## Languages and Tools  
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/vuejs-original-wordmark.svg" alt="Vue.js" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/laravel-plain-wordmark.svg" alt="Laravel" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/codeigniter.svg" alt="CodeIgniter" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/symfony_black_03.svg" alt="Symfony" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg" alt="AWS" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg" alt="AWS" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/sass-original.svg" alt="Sass" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg" alt="PostgreSQL" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/d3js-original.svg" alt="D3.js" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/logo-title.svg" alt="Chart.js" height="25" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="25" />  
+</div>  
+
+<br/>  
+
+
+## Github Stats  
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github-readme-stats.vercel.app/api?username=cocktailphp&show_icons=true&count_private=true&hide_border=true" align="left" style="width: 100%" />
+
+</td><td valign="top" width="50%">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cocktailphp&hide_border=true&layout=compact" align="left" style="width: 100%" />
+
+</td></tr></table>  
+
+<br/>  
+
+  
+
+<br/>  
+
+![Profile views counter](https://komarev.com/ghpvc/?username=phpdev115&&style=flat-square)  
+  
+
+<br/>  
+
+
+<br />
+
+----
+<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
