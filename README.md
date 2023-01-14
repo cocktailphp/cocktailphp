@@ -1,10 +1,10 @@
-## Hey �, I'm a Senior PHP Developer  
+## Hey �, I'm a Senior React/Vue/Django/Flask Developer  
   
 
 
 
 ### Glad to see you here!  
-I’m a full-stack developer who has turned years of full-time into a freelancing career. Being a full-stack allows me to not only develop client-facing apps using JavaScript frameworks(Vue/React) and websites but also develop it with cutting edge backend using PHP frameworks.
+I’m a full-stack developer who has turned years of full-time into a freelancing career. Being a full-stack allows me to not only develop client-facing apps using JavaScript frameworks(React/Vue) and websites but also develop it with cutting edge backend using Python frameworks.
 
 I specialize in building robust backends that do all the heavy lifting for your app or website. I love designing systems that are light yet powerful, distributed yet synchronized and beautiful yet effective.  
   
@@ -15,13 +15,13 @@ I specialize in building robust backends that do all the heavy lifting for your 
 ## Rapidfire  
 <table><tr><td valign="top" width="50%">
 
-- � I’m currently working on Upwork  
+- � I’m currently working on Linkedin  
   
 
-- � I’m currently specializing Vue/React/Laravel  
+- � I’m currently specializing React/Vue/Django/Flask  
   
 
-- ❓ Ask me about anything related to JS/PHP stack and related technologies  
+- ❓ Ask me about anything related to JS/Python stack and related technologies  
   
 
 - ⚡ Fun fact: I keep night shift swithed on at all times   
@@ -68,11 +68,11 @@ I specialize in building robust backends that do all the heavy lifting for your 
 ## Github Stats  
 <table><tr><td valign="top" width="50%">
 
-<img src="https://github-readme-stats.vercel.app/api?username=rory-hamilton&show_icons=true&count_private=true&hide_border=true" align="left" style="width: 100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=jake-wilson36&show_icons=true&count_private=true&hide_border=true" align="left" style="width: 100%" />
 
 </td><td valign="top" width="50%">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rory-hamilton&hide_border=true&layout=compact" align="left" style="width: 100%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jake-wilson36&hide_border=true&layout=compact" align="left" style="width: 100%" />
 
 </td></tr></table>  
 
